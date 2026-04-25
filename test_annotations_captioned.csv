@@ -1,0 +1,28 @@
+Image Name,Majority Vote Label,Number of Annotators who Selected SSA (Out of 7),Partition,generated_caption
+MHIST_aaa.png,SSA,6,train,"The slide displays a histopathological image of a glandular tissue, likely a mammary gland. The slide is divided into two main sections: the upper section is a close-up view of the gland, and the lower section shows the surrounding tissue, which is likely the stroma.
+
+The upper section"
+MHIST_aab.png,HP,0,train,"The histopathology slide displays a close-up view of a glandular tissue, likely a mammary gland, with a focus on the glandular architecture and nuclear features. The slide is stained with H&E (Hematoxylin and Eosin) to differentiate between the glandular tissue and"
+MHIST_aac.png,SSA,5,train,"The slide displays a histopathological image of a glandular tissue, likely a mammary gland. The slide is divided into two main sections: the upper section is white, and the lower section is purple. The upper section shows a granular structure with granules of various sizes, indicative of the"
+MHIST_aae.png,HP,1,train,"The slide displays a histopathological image of a glandular tissue, likely a mammary gland. The slide is divided into two main sections: the outer surface and the interior of the gland.
+
+The outer surface of the gland is visible, showing the granular and granular-like structures typical of gland"
+MHIST_aaf.png,SSA,5,train,
+MHIST_aag.png,HP,2,test,"The slide contains a histopathological image of a glandular tissue, likely a salivary gland. The slide is divided into two sections, with the upper section showing the glandular architecture and the lower section showing the nuclear features and stroma.
+
+The glandular architecture is composed of numerous small,"
+MHIST_aah.png,HP,2,test,"The slide displays a histopathological image of a glandular tissue, likely a mammary gland. The slide is divided into two main sections: the upper section is a close-up view of the gland's surface, and the lower section shows the surrounding tissue and the stroma.
+
+The upper section of"
+MHIST_aai.png,HP,3,train,"The slide displays a close-up of a histological view of a glandular tissue. The slide is divided into two main sections: the outer surface and the inner surface. The outer surface is a pale purple color, and the inner surface is a darker purple or purple-gray color, possibly due to the"
+MHIST_aaj.png,HP,0,train,"The slide displays a histopathological view of a glandular tissue, likely a mammary gland. The slide is divided into two main sections: the outer surface and the interior of the gland.
+
+The outer surface of the gland is visible, showing the granular and fibrous architecture typical of glandular"
+MHIST_aak.png,HP,2,train,"The slide displays a histopathological image of a glandular tissue, likely a mammary gland. The slide is divided into several sections, each with a different color and intensity scale. The color scheme is typical for histopathological slides, with shades ranging from light to dark, indicating different levels of"
+MHIST_aal.png,SSA,5,train,"The slide displays a histopathological image of a glandular structure, likely a mammary gland, with a focus on the nuclear and stroma regions. The gland is composed of multiple lobes, which are the three-dimensional structures that make up the nucleus of the gland. The lobes are surrounded"
+MHIST_aam.png,HP,0,train,"The histopathology slide displays a close-up view of a glandular tissue, likely a mammary gland. The slide is divided into two main sections: the outer surface and the interior of the gland. The outer surface is a pale purple color, and the interior is a darker purple or purple-gray"
+MHIST_aao.png,HP,0,train,"The slide displays a histopathological image of a glandular tissue, likely a mammary gland. The slide is divided into two main sections: the outer surface and the interior of the gland.
+
+The outer surface of the gland is characterized by a purple-red coloration, which is typical of glandular"
+MHIST_aap.png,HP,2,train,"The slide displays a histopathological image of a glandular tissue, likely a mammary gland. The slide is divided into two main sections: the outermost section is a pale purple color, which is typical of the histological stain used for this type of tissue. The innermost section is a"
+MHIST_aaq.png,SSA,5,test,"The histopathology slide displays a close-up view of a glandular tissue, likely a mammary gland, with a focus on the glandular architecture and nuclear features. The slide is stained with H&E (Hematoxylin and Erythritol) to show the nuclear features and"
