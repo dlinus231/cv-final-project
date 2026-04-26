@@ -1,0 +1,5 @@
+checkpoint_path,accuracy,balanced_accuracy
+checkpoints/conch/pytorch_model.bin,0.6903553299492385,0.5278782272306787
+checkpoints/conch/conch_mhist_finetuned_num_unfrozen=1.bin,0.7239847715736041,0.6107083788859922
+checkpoints/conch/conch_mhist_finetuned_num_unfrozen=2.bin,0.7496827411167513,0.659009615115073
+checkpoints/conch/conch_mhist_finetuned_num_unfrozen=4.bin,0.7817258883248731,0.7089245834851755
