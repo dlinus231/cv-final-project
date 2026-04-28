@@ -8,5 +8,16 @@ wheels/
 
 # Virtual environments
 .venv
-images
-annotations.csv
+
+# Data and models
+images/
+linus_branch/
+*.csv
+*.pth
+*.db
+results/
+optuna_trials*/
+checkpoint*/
+# Results and databases
+final_report_*.txt
+*.db
