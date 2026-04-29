@@ -1,0 +1,2 @@
+Make sure to add "pytorch_model.bin" file to this folder for the conch.ipynb file
+You can get it from here: https://huggingface.co/MahmoodLab/CONCH, after being granted access to the model (I think you just need a HuggingFace account)
