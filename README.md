@@ -1,74 +1,32 @@
 ## Project Overview
 
-This project investigates the diagnostic capabilities of CLIP-based transformer models on the MHIST breast cancer dataset. It compares two distinct training paradigms:
-1.  **Multimodal Finetuning**: Adapting both the vision encoder and text encoder to the downstream task.
-2.  **Image-Only Finetuning**: Freezing the pre-trained weights of the text encoder and training only the vision encoder.
+This project investigates the diagnostic capabilities of CLIP-based transformer models (specifically QuiltNet-B-32) on the MHIST colorectal cancer dataset. 
 
-The primary objective is to determine whether retaining the general semantic knowledge of the frozen text encoder provides a significant benefit (i.e., requiring less training data) for this specific pathology classification task.
+## Quick Start: Interactive Demo
 
-## Installation & Setup
+To see the final model's diagnostic performance and self-attention reasoning in action:
 
-1.  **Clone the repository:**
+1.  **Clone & Setup:**
     ```bash
     git clone <repo-url>
     cd computer_vision_project
     ```
 
 2.  **Install Dependencies:**
-    It is recommended to use a Python virtual environment.
-    
     ```bash
     python3 -m venv venv
     source venv/bin/activate  # On Windows: venv\Scripts\activate
     pip install -r quilt_notebooks/requirements.txt
     ```
 
-## Usage
+3.  **Run the Demo:**
+    - Open **`quilt_notebooks/model_demo.ipynb`**.
+    - Run the notebook cells to load the best multimodal weights discovered via Bayesian optimization.
+    - The notebook will automatically sample random patient cases and display:
+        - The pathology image.
+        - **Vision Attention Maps**: Spatial regions the model prioritized.
+        - **Text Attention Weights**: Semantic tokens in the clinical prompt that influenced the diagnosis.
 
-### 1. Preprocessing
-Generate the multimodal captions required for training:
-```bash
-python quilt_src/generate_captions.py --data_dir "quilt_data/mhist-crc-tme/mhist-crc-tme" --out_path "captions/mhist_with_captions_all_prompts.csv"
-```
+## Advanced Usage
 
-### 2. Training & Experimentation
-
-To run the main experimental pipeline:
-```bash
-python quilt_src/multimodal_experiment.py
-```
-
-This will:
-1.  Load the dataset annotations (`quilt_data/annotations.csv`).
-2.  Split data into 70% training, 30% testing.
-3.  Initialize the QuiltNet-B-32 model (frozen text, finetuned image).
-4.  Train the model using Optuna for hyperparameter optimization.
-5.  Evaluate the best model on the held-out test set.
-6.  Generate a classification report and save the best model checkpoint.
-
-To replicate the specific baseline experiments from the README:
-
-**Baseline 1: Image-Only Finetuned**
-```bash
-python quilt_src/image_only_experiment.py --trials 50 --results_dir "quilt_results"
-```
-
-**Baseline 2: Image-Only Frozen**
-```bash
-python quilt_src/image_only_experiment.py --trials 50 --freeze_backbone --results_dir "quilt_results"
-```
-
-## Visualization
-
-To analyze model predictions and attention maps on a single case:
-```bash
-python quilt_src/visualize_attention.py
-```
-
-## Interactive Demo
-
-An interactive Jupyter Notebook is provided to demonstrate the final model's diagnostic reasoning through dual-encoder self-attention visualizations:
-
-1.  Open `quilt_notebooks/model_demo.ipynb`.
-2.  Run the cells to load the optimal weights and the dataset.
-3.  Use the provided functions to sample random histology cases and see exactly where the model is looking in both the image and the clinical prompt.
+For technical details on training pipelines, caption generation, or baseline comparisons, please refer to the scripts in `quilt_src/` or the experimental logs in `quilt_results/`.
