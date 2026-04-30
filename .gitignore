@@ -1,1 +1,32 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+
+# Data and models
+images/
+linus_branch/
+*.csv
+*.pth
+*.db
+quilt_results/
+optuna_trials*/
+checkpoint*/
+
+# Results and databases
+final_report_*.txt
+*.db
 mhist_data
+
+# Linus branch files (local only)
+captions/
+CONCH/
+checkpoints/
+conch_code_files/
+mhist_zeroshot_model_comparison.csv
