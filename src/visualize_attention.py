@@ -206,7 +206,7 @@ if __name__ == "__main__":
     df = pd.read_csv("linus_branch/captions/mhist_with_captions_all_prompts.csv")
     
     # Merge with annotations to get the True Label
-    annotations = pd.read_csv("annotations.csv")
+    annotations = pd.read_csv("data/annotations.csv")
     df = df.merge(annotations, left_on="image", right_on="Image Name", how="inner")
     
     # Filter strictly for Sessile Serrated Adenoma (SSA) cases

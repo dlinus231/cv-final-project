@@ -30,11 +30,11 @@ for FILE in "${CAPTION_FILES[@]}"; do
         
         # 1. Finetuned Backbone + Top-1 Caption
         echo ">>> Running FINETUNED Backbone + Top-1 Caption..."
-        python multimodal_experiment.py --caption_file "$FILE" --trials $TRIALS --use_top1 --results_dir "$RESULTS_DIR"
+        python src/multimodal_experiment.py --caption_file "$FILE" --trials $TRIALS --use_top1 --results_dir "$RESULTS_DIR"
         
         # 2. Frozen Backbone + Top-1 Caption
         echo ">>> Running FROZEN Backbone + Top-1 Caption..."
-        python multimodal_experiment.py --caption_file "$FILE" --trials $TRIALS --freeze_backbone --use_top1 --results_dir "$RESULTS_DIR"
+        python src/multimodal_experiment.py --caption_file "$FILE" --trials $TRIALS --freeze_backbone --use_top1 --results_dir "$RESULTS_DIR"
         
     else
         echo "Warning: Caption file $FILE not found. Skipping."

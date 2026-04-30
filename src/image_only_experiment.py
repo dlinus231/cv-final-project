@@ -17,7 +17,7 @@ from torchvision import transforms
 import torchstain
 
 # --- 0. Configuration & Global Setup ---
-ANNOTATIONS_PATH = "annotations.csv"
+ANNOTATIONS_PATH = "data/annotations.csv"
 IMAGES_DIR = "images"
 MODEL_NAME = "hf-hub:wisdomik/QuiltNet-B-32"
 LABEL_MAP = {"HP": 1, "SSA": 0}

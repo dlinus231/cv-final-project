@@ -9,11 +9,11 @@ echo "================================================================"
 
 # 1. Image-Only Finetuned
 echo ">>> Running IMAGE-ONLY FINETUNED experiment..."
-python image_only_experiment.py --trials $TRIALS --results_dir "$RESULTS_DIR"
+python src/image_only_experiment.py --trials $TRIALS --results_dir "$RESULTS_DIR"
 
 # 2. Image-Only Frozen
 echo ">>> Running IMAGE-ONLY FROZEN experiment..."
-python image_only_experiment.py --trials $TRIALS --freeze_backbone --results_dir "$RESULTS_DIR"
+python src/image_only_experiment.py --trials $TRIALS --freeze_backbone --results_dir "$RESULTS_DIR"
 
 echo "================================================================"
 echo "Image-only experiments completed!"
