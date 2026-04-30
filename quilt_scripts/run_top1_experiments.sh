@@ -5,7 +5,7 @@ source .venv/bin/activate
 
 # Configuration
 TRIALS=50
-RESULTS_DIR="results"
+RESULTS_DIR="quilt_results"
 CAPTION_FILES=(
     "captions/mhist_with_captions.csv"
     "captions/mhist_with_captions_pruned.csv"
@@ -30,11 +30,11 @@ for FILE in "${CAPTION_FILES[@]}"; do
         
         # 1. Finetuned Backbone + Top-1 Caption
         echo ">>> Running FINETUNED Backbone + Top-1 Caption..."
-        python src/multimodal_experiment.py --caption_file "$FILE" --trials $TRIALS --use_top1 --results_dir "$RESULTS_DIR"
+        python quilt_src/multimodal_experiment.py --caption_file "$FILE" --trials $TRIALS --use_top1 --results_dir "$RESULTS_DIR"
         
         # 2. Frozen Backbone + Top-1 Caption
         echo ">>> Running FROZEN Backbone + Top-1 Caption..."
-        python src/multimodal_experiment.py --caption_file "$FILE" --trials $TRIALS --freeze_backbone --use_top1 --results_dir "$RESULTS_DIR"
+        python quilt_src/multimodal_experiment.py --caption_file "$FILE" --trials $TRIALS --freeze_backbone --use_top1 --results_dir "$RESULTS_DIR"
         
     else
         echo "Warning: Caption file $FILE not found. Skipping."

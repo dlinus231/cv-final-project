@@ -198,7 +198,7 @@ if __name__ == "__main__":
     classifier = MultimodalQuiltClassifier(base_model, dropout_rate=0.5110907127277374).to(device)
     
     # Load the best saved checkpoint
-    best_model_path = "results/finetuned_top1/mhist_with_captions_all_prompts/best_study_model.pth"
+    best_model_path = "quilt_results/finetuned_top1/mhist_with_captions_all_prompts/best_study_model.pth"
     classifier.load_state_dict(torch.load(best_model_path, map_location=device, weights_only=True))
     print(f"Loaded optimal weights from {best_model_path}")
     
@@ -206,7 +206,7 @@ if __name__ == "__main__":
     df = pd.read_csv("captions/mhist_with_captions_all_prompts.csv")
     
     # Merge with annotations to get the True Label
-    annotations = pd.read_csv("data/annotations.csv")
+    annotations = pd.read_csv("quilt_data/annotations.csv")
     df = df.merge(annotations, left_on="image", right_on="Image Name", how="inner")
     
     # Filter strictly for Sessile Serrated Adenoma (SSA) cases

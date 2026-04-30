@@ -15,7 +15,7 @@ linus_branch/
 *.csv
 *.pth
 *.db
-results/
+quilt_results/
 optuna_trials*/
 checkpoint*/
 # Results and databases

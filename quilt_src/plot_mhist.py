@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 
 # File paths
-ANNOTATIONS_PATH = "data/annotations.csv"
+ANNOTATIONS_PATH = "quilt_data/annotations.csv"
 IMAGES_DIR = "images"
 
 # Load data

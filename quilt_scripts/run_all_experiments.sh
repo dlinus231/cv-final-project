@@ -25,7 +25,7 @@ for FILE in "${CAPTION_FILES[@]}"; do
         echo "----------------------------------------------------------------"
         echo "Running: $FILE"
         echo "----------------------------------------------------------------"
-        python src/multimodal_experiment.py --caption_file "$FILE" --trials $TRIALS
+        python quilt_src/multimodal_experiment.py --caption_file "$FILE" --trials $TRIALS
     else
         echo "Skipping missing file: $FILE"
     fi

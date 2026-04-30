@@ -18,7 +18,7 @@ CAPTION_FILES=(
 TRIALS=50
 
 # Results base directory
-RESULTS_DIR="results"
+RESULTS_DIR="quilt_results"
 
 echo "----------------------------------------------------------------"
 echo "Starting Comparative Multimodal Experiments"
@@ -26,10 +26,10 @@ echo "----------------------------------------------------------------"
 
 # 0. Run Image-Only Baseline Experiments
 echo ">>> Running IMAGE-ONLY FINETUNED Baseline Experiment..."
-python src/image_only_experiment.py --trials $TRIALS --results_dir "$RESULTS_DIR"
+python quilt_src/image_only_experiment.py --trials $TRIALS --results_dir "$RESULTS_DIR"
 
 echo ">>> Running IMAGE-ONLY FROZEN Baseline Experiment..."
-python src/image_only_experiment.py --trials $TRIALS --freeze_backbone --results_dir "$RESULTS_DIR"
+python quilt_src/image_only_experiment.py --trials $TRIALS --freeze_backbone --results_dir "$RESULTS_DIR"
 
 for FILE in "${CAPTION_FILES[@]}"; do
 
@@ -41,11 +41,11 @@ for FILE in "${CAPTION_FILES[@]}"; do
         
         # 1. Run Finetuned Backbone Experiment
         echo ">>> Running FINETUNED Backbone Experiment..."
-        python src/multimodal_experiment.py --caption_file "$FILE" --trials $TRIALS --results_dir "$RESULTS_DIR"
+        python quilt_src/multimodal_experiment.py --caption_file "$FILE" --trials $TRIALS --results_dir "$RESULTS_DIR"
         
         # 2. Run Frozen Backbone Experiment
         echo ">>> Running FROZEN Backbone Experiment..."
-        python src/multimodal_experiment.py --caption_file "$FILE" --trials $TRIALS --freeze_backbone --results_dir "$RESULTS_DIR"
+        python quilt_src/multimodal_experiment.py --caption_file "$FILE" --trials $TRIALS --freeze_backbone --results_dir "$RESULTS_DIR"
         
     else
         echo "Skipping missing file: $FILE"
