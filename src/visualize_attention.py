@@ -203,7 +203,7 @@ if __name__ == "__main__":
     print(f"Loaded optimal weights from {best_model_path}")
     
     # Load dataset
-    df = pd.read_csv("linus_branch/captions/mhist_with_captions_all_prompts.csv")
+    df = pd.read_csv("captions/mhist_with_captions_all_prompts.csv")
     
     # Merge with annotations to get the True Label
     annotations = pd.read_csv("data/annotations.csv")

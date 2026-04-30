@@ -2,16 +2,16 @@
 
 # Array of caption files to test
 CAPTION_FILES=(
-    "linus_branch/mhist_with_captions.csv"
-    "linus_branch/mhist_with_captions_pruned.csv"
-    "linus_branch/captions/mhist_with_captions_all_prompts.csv"
-    "linus_branch/captions/mhist_with_captions_pruned.csv"
-    "linus_branch/captions/mhist_with_captions_num_unfrozen=1_all_prompts.csv"
-    "linus_branch/captions/mhist_with_captions_num_unfrozen=1_pruned.csv"
-    "linus_branch/captions/mhist_with_captions_num_unfrozen=2_all_prompts.csv"
-    "linus_branch/captions/mhist_with_captions_num_unfrozen=2_pruned.csv"
-    "linus_branch/captions/mhist_with_captions_num_unfrozen=4_all_prompts.csv"
-    "linus_branch/captions/mhist_with_captions_num_unfrozen=4_pruned.csv"
+    "captions/mhist_with_captions.csv"
+    "captions/mhist_with_captions_pruned.csv"
+    "captions/mhist_with_captions_all_prompts.csv"
+    "captions/mhist_with_captions_pruned.csv"
+    "captions/mhist_with_captions_num_unfrozen=1_all_prompts.csv"
+    "captions/mhist_with_captions_num_unfrozen=1_pruned.csv"
+    "captions/mhist_with_captions_num_unfrozen=2_all_prompts.csv"
+    "captions/mhist_with_captions_num_unfrozen=2_pruned.csv"
+    "captions/mhist_with_captions_num_unfrozen=4_all_prompts.csv"
+    "captions/mhist_with_captions_num_unfrozen=4_pruned.csv"
 )
 
 # Number of trials per experiment

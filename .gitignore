@@ -7,7 +7,7 @@ wheels/
 *.egg-info
 
 # Virtual environments
-.venv
+.venv/
 
 # Data and models
 images/
@@ -21,4 +21,11 @@ checkpoint*/
 # Results and databases
 final_report_*.txt
 *.db
+mhist_data
 
+# Linus branch files (local only)
+captions/
+CONCH/
+checkpoints/
+conch_code_files/
+mhist_zeroshot_model_comparison.csv

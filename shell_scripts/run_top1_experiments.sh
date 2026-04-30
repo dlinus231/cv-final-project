@@ -7,15 +7,15 @@ source .venv/bin/activate
 TRIALS=50
 RESULTS_DIR="results"
 CAPTION_FILES=(
-    "linus_branch/captions/mhist_with_captions.csv"
-    "linus_branch/captions/mhist_with_captions_pruned.csv"
-    "linus_branch/captions/mhist_with_captions_all_prompts.csv"
-    "linus_branch/captions/mhist_with_captions_num_unfrozen=1_pruned.csv"
-    "linus_branch/captions/mhist_with_captions_num_unfrozen=1_all_prompts.csv"
-    "linus_branch/captions/mhist_with_captions_num_unfrozen=2_pruned.csv"
-    "linus_branch/captions/mhist_with_captions_num_unfrozen=2_all_prompts.csv"
-    "linus_branch/captions/mhist_with_captions_num_unfrozen=4_pruned.csv"
-    "linus_branch/captions/mhist_with_captions_num_unfrozen=4_all_prompts.csv"
+    "captions/mhist_with_captions.csv"
+    "captions/mhist_with_captions_pruned.csv"
+    "captions/mhist_with_captions_all_prompts.csv"
+    "captions/mhist_with_captions_num_unfrozen=1_pruned.csv"
+    "captions/mhist_with_captions_num_unfrozen=1_all_prompts.csv"
+    "captions/mhist_with_captions_num_unfrozen=2_pruned.csv"
+    "captions/mhist_with_captions_num_unfrozen=2_all_prompts.csv"
+    "captions/mhist_with_captions_num_unfrozen=4_pruned.csv"
+    "captions/mhist_with_captions_num_unfrozen=4_all_prompts.csv"
 )
 
 echo "----------------------------------------------------------------"
