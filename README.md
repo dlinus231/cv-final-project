@@ -8,7 +8,7 @@ To see the final model's diagnostic performance and self-attention reasoning in 
 
 1.  **Clone & Setup:**
     ```bash
-    git clone <repo-url>
+    git clone https://github.com/dlinus231/cv-final-project/
     cd computer_vision_project
     ```
 
