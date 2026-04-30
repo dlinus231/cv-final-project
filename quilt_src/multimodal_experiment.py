@@ -39,8 +39,6 @@ INV_LABEL_MAP = {v: k for k, v in LABEL_MAP.items()}
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-
-
 # --- 1. Dataset Class ---
 class MultimodalMHISTDataset(Dataset):
     def __init__(self, df, img_dir, transform=None, clip_preprocess=None, tokenizer=None, 
